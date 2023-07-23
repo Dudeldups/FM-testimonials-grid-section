@@ -1,0 +1,25 @@
+@use "../abstracts/" as *;
+
+body {
+  font: 500 0.8125rem "Barlow Semi Condensed", sans-serif;
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+  font-weight: 600;
+}
+
+.user__verification {
+  font-size: 0.6875rem;
+  line-height: 0.6875rem;
+}
+
+.testimonial {
+  &__title {
+    font-size: 1.25rem;
+    line-height: normal;
+  }
+
+  &__review {
+    line-height: 1.125rem;
+  }
+}

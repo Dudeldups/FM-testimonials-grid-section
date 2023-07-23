@@ -1,0 +1,15 @@
+@use "../abstracts/" as *;
+
+.testimonial {
+  background: $clr-gray-light;
+
+  padding: 1.62rem 2rem 2rem;
+
+  &__title {
+    margin-top: 1.12rem;
+  }
+
+  &__review {
+    margin-top: 1rem;
+  }
+}
