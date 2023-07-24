@@ -8,9 +8,11 @@ body {
   font-weight: 600;
 }
 
-.user__verification {
-  font-size: 0.6875rem;
-  line-height: 0.6875rem;
+.user {
+  &__verification {
+    font-size: 0.6875rem;
+    line-height: 0.6875rem;
+  }
 }
 
 .testimonial {

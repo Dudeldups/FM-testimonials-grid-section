@@ -1,0 +1,18 @@
+@use "variables" as *;
+@use "sass:color";
+
+@mixin set-background($bg-color) {
+  $text-color: $clr-gray-dark;
+
+  @if color.lightness($bg-color) < 55 {
+    $text-color: $clr-light;
+  }
+
+  background: $bg-color;
+  color: $text-color;
+
+  .testimonial__review,
+  .user__verification {
+    color: rgba($text-color, 0.8);
+  }
+}

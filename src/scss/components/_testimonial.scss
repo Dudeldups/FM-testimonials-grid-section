@@ -1,15 +1,36 @@
 @use "../abstracts/" as *;
 
 .testimonial {
-  background: $clr-gray-light;
-
   padding: 1.62rem 2rem 2rem;
+  border-radius: 0.5rem;
 
   &__title {
     margin-top: 1.12rem;
+    quotes: none;
   }
 
   &__review {
+    display: block;
     margin-top: 1rem;
+  }
+
+  &:nth-child(1) {
+    @include set-background($clr-violet);
+  }
+
+  &:nth-child(2) {
+    @include set-background($clr-gray-dark);
+  }
+
+  &:nth-child(3) {
+    @include set-background($clr-light);
+  }
+
+  &:nth-child(4) {
+    @include set-background($clr-dark);
+  }
+
+  &:nth-child(5) {
+    @include set-background($clr-light);
   }
 }
