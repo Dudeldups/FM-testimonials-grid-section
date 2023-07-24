@@ -15,7 +15,7 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 
 ### Links
 
-- [Solution on Frontend Mentor]()
+- [Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/scss-testimonials-grid-E1ZeeBO591)
 - [Live site](https://dudeldups.github.io/FM-testimonials-grid-section/)
 
 ### Screenshot

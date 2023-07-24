@@ -106,7 +106,6 @@ body {
     1.88rem
   );
   max-width: 25rem;
-  margin-inline: auto;
   grid-template: "one" "two" "three" "four" "five";
 }
 @media (min-width: 43.75em) {
