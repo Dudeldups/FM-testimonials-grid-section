@@ -1,7 +1,7 @@
 @use "../abstracts/" as *;
 
 .testimonial {
-  padding: 1.62rem 2rem 2rem;
+  padding: 1.62rem get-clamp(1.5rem, 2rem, 20rem, 23.4rem) 2rem;
   border-radius: 0.5rem;
 
   &__title {
@@ -15,7 +15,14 @@
   }
 
   &:nth-child(1) {
-    @include set-background($clr-violet);
+    @include set-background($clr-violet, $outline: true, $bg-img: true);
+
+    @include mq($until: $bp-desktop) {
+      .testimonial__review {
+        padding-top: 1.5rem;
+        padding-right: 1rem;
+      }
+    }
   }
 
   &:nth-child(2) {
@@ -27,7 +34,7 @@
   }
 
   &:nth-child(4) {
-    @include set-background($clr-dark);
+    @include set-background($clr-dark, $outline: true);
   }
 
   &:nth-child(5) {

@@ -1,14 +1,33 @@
 @use "variables" as *;
+@use "functions" as *;
 @use "sass:color";
 
-@mixin set-background($bg-color) {
+@mixin set-background($bg-color, $outline: false, $bg-img: false) {
   $text-color: $clr-gray-dark;
 
   @if color.lightness($bg-color) < 55 {
     $text-color: $clr-light;
   }
 
-  background: $bg-color;
+  @if $outline {
+    $outline-color: $clr-violet;
+    @if $bg-color == $clr-violet {
+      $outline-color: lighten($clr-violet, 17);
+    }
+    .user__img {
+      outline: 2px solid $outline-color;
+    }
+  }
+
+  @if $bg-img {
+    background: url("../assets/images/bg-pattern-quotation.svg")
+      top
+      right
+      get-clamp(1.5rem, 5rem, 23.4375rem, 56.25rem)
+      no-repeat;
+  }
+
+  background-color: $bg-color;
   color: $text-color;
 
   .testimonial__review,
