@@ -3,6 +3,7 @@
 .testimonial {
   padding: 1.62rem get-clamp(1.5rem, 2rem, 20rem, 23.4rem) 2rem;
   border-radius: 0.5rem;
+  box-shadow: $box-shadow;
 
   &__title {
     margin-top: 1.12rem;

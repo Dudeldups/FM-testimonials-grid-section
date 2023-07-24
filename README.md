@@ -22,7 +22,7 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 
 #### Desktop
 
-![Solution](https://github.com/Dudeldups/FM-testimonials-grid-section/blob/main/screenshots/solution.png)
+![Solution](https://github.com/Dudeldups/FM-testimonials-grid-section/blob/main/screenshots/solution-desktop.png)
 
 ## My process
 

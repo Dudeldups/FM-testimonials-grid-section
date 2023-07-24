@@ -130,6 +130,7 @@ body {
     2rem
   ) 2rem;
   border-radius: 0.5rem;
+  box-shadow: 2.5rem 3.75rem 3.125rem -2.9375rem rgba(72, 85, 106, 0.25);
 }
 .testimonial__title {
   margin-top: 1.12rem;
@@ -143,7 +144,7 @@ body {
   grid-area: one;
   background: url("../assets/images/bg-pattern-quotation.svg") top right clamp(
     1.5rem,
-    10.67vw + -1rem,
+    6.79vw + -0.09rem,
     5rem
   ) no-repeat;
   background-color: #7541c8;
